@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix's Cuisine - Create Recipe</title>
+    <link rel="stylesheet" href="STYLES.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald&family=Pacifico&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Create Your Recipe</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="create-recipe.html">Create Recipe</a>
+        <a href="signup.php">Sign Up</a>
+        <a href="login.php">Log In</a>
+        <a href="profile.php">Profile</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main class="create-recipe-page">
+        <form id="createRecipeForm" action="php/create_recipe.php" method="POST" enctype="multipart/form-data">
+            <div class="recipe-section">
+                <label for="title">Recipe Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter recipe title" required>
+            </div>
+
+            <div class="recipe-section">
+                <label for="description">Short Description:</label>
+                <textarea id="description" name="description" placeholder="Briefly describe your recipe" rows="3" required></textarea>
+            </div>
+
+            <div class="recipe-section">
+                <label for="image">Recipe Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <div class="recipe-section">
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" placeholder="List your ingredients (one per line)" rows="8" required></textarea>
+            </div>
+
+            <div class="recipe-section">
+                <label for="directions">Directions:</label>
+                <textarea id="directions" name="directions" placeholder="Write your cooking directions (step by step)" rows="12" required></textarea>
+            </div>
+
+            <div class="recipe-section">
+                <label for="prep_time">Prep Time (minutes):</label>
+                <input type="number" id="prep_time" name="prep_time" placeholder="e.g., 15" min="0">
+            </div>
+
+            <div class="recipe-section">
+                <label for="cook_time">Cook Time (minutes):</label>
+                <input type="number" id="cook_time" name="cook_time" placeholder="e.g., 30" min="0">
+            </div>
+
+            <div class="recipe-section">
+                <label for="servings">Servings:</label>
+                <input type="number" id="servings" name="servings" placeholder="e.g., 4" min="1">
+            </div>
+
+            <button type="submit" class="button">Submit Recipe</button>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* Unique Color Palette (Modified) */
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    background-color: #f0f5f2; /* Light, desaturated sage green */
+    color: #36454f; /* Dark charcoal grey */
+    line-height: 1.6;
+}
+
+
+.hotel-description {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #5c4a3f; /* Muted brown-spice blend */
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.hotel-description p {
+    margin-bottom: 15px;
+}
+
+.container, .page-content, .service, table, th, td, .recipe, .profile-container, .contact-container, .form-container form {
+    background-color: #ffffff; /*white*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for depth */
+    border-radius: 8px; /* Added border-radius for rounded corners */
+    padding: 20px; /* added padding for more space */
+    margin: 20px auto; /* added margin for more space */
+    max-width: 960px; /* added max width for better content */
+}
+#signupForm{
+    display: block;  /* Ensures it behaves as a block element */
+    width: 400px;  /* Adjust width as needed */
+    margin: 50px auto;  /* Centers the form */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+}
+header {
+    background-color: #2f4f4f; /* Dark slate grey, deep teal alternative */
+    color: #f8f8ff; /* Ghost white */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    z-index: 100;
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #f8f8ff; /* Changed h1 color to header color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text-shadow for emphasis */
+}
+
+nav {
+    background-color: #483d8b; /* Dark slate blue, petrol blue alternative */
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+nav a {
+    color: #e6e6fa; /* Lavender */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #6a5acd; /* Slate blue */
+    color: #fff;
+}
+
+.book-now-button, .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #cd5c5c; /* Indian red, muted coral alternative */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
+.book-now-button:hover, .button:hover {
+    background-color: #e9967a; /* Light coral */
+}
+
+h2, h3 {
+    color: #2f4f4f; /* Dark slate grey */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #483d8b;
+    color: #f8f8ff;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #e0d9c9;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2efe9;
+}
+
+td img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gallery figcaption {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffd700; /* Gold, soft gold alternative */
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery figure:hover figcaption {
+    transform: translateY(0);
+}
+
+.offered {
+    padding: 20px;
+}
+
+.offered h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Rate page specific styles */
+.customer-reviews {
+    border: none;
+    margin-bottom: 40px;
+}
+
+.customer-reviews h2, .customer-reviews h3 {
+    color: #2f4f4f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #5c4a3f;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0d9c9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f8f8ff;
+}
+
+.error {
+    color: #a52a2a; /* Brown red, for errors */
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* Additions for recipes.html */
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.recipe {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2f4f4f;
+}
+
+.recipe img {
+    border-radius: 8px;
+}
+
+.recipe p {
+    margin:auto 1rem;
+    
+}

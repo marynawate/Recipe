@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gourmet Recipe Hub - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald&family=Pacifico&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing CSS here */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .gallery-item figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover figcaption {
+            opacity: 1;
+        }
+        
+        .explore-recipes-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .explore-recipes-button:hover {
+            background-color: #3e8e41;
+        }
+
+        .button-container {
+            text-align: right; /* Align content to the right */
+            padding: 20px; /* Add some padding for spacing */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Phoenix's Cuisine</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="create-recipe.html">Create Recipe</a>
+        <a href="signup.php">Sign Up</a>
+        <a href="login.php">Log In</a>
+        <a href="profile.php">Profile</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <section class="recipe-description">
+        <p>Welcome to Phoenix's Cuisine Hub, your culinary destination for exquisite recipes and inspiring culinary experiences. We've curated a collection of gourmet recipes, from classic favorites to innovative dishes, designed to elevate your cooking skills and delight your taste buds. Whether you're a seasoned chef or a passionate home cook, you'll find something to ignite your culinary creativity here.</p>
+    </section>
+
+    <section class="featured-recipes">
+        <h3>Featured Recipes</h3>
+        <div class="gallery">
+            <figure class="gallery-item">
+                <a href="recipes.html#elegant-steak">
+                    <img src="https://insanelygoodrecipes.com/wp-content/uploads/2020/05/Steak.png" alt="Elegant Steak">
+                    <figcaption>Elegant Steak: Perfectly cooked and seasoned.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#seafood-delight">
+                    <img src="https://www.darlingharbour.com/getmedia/678ee9ea-45e8-4496-b73a-fdc2b34d131a/Darling-Harbour-Tenants-Nicks-Hero.jpg?width=1920" alt="Seafood Delight">
+                    <figcaption>Seafood Delight: Fresh and flavorful.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#gourmet-pasta">
+                    <img src="https://th.bing.com/th/id/OIP.BXk1hWrZ3tI5glCcKMnPPQAAAA?rs=1&pid=ImgDetMain" alt="Gourmet Pasta">
+                    <figcaption>Gourmet Pasta: A delightful blend of flavors.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#vegetarian-dish">
+                    <img src="https://minimalistbaker.com/wp-content/uploads/2017/02/AMAZING-Curried-Lentil-Salad-with-Kale-Roasted-Veggies-and-a-GREEN-CURRY-dressing-30-minutes-vegan-glutenfree-salad-recipe-healthy-768x1152.jpg" alt="Vegetarian Dish">
+                    <figcaption>Vegetarian Dish: Vibrant and healthy.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#chocolate-dessert">
+                    <img src="https://th.bing.com/th/id/OIP.ZZD1Y4nsZ4l4uaqYX_JNUQAAAA?rs=1&pid=ImgDetMain" alt="Chocolate Dessert">
+                    <figcaption>Decadent Chocolate Dessert: Indulge in sweetness.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#international-cuisine">
+                    <img src="https://th.bing.com/th/id/OIP.t-lVusDQmI0QmBSQcEzbVwHaEo?rs=1&pid=ImgDetMain" alt="International Cuisine">
+                    <figcaption>International Cuisine: Taste the world.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#exotic-cocktail">
+                    <img src="https://i.pinimg.com/originals/ff/49/5a/ff495a7f128abf3b6c4b6bab00721a1b.jpg" alt="Exotic Cocktail">
+                    <figcaption>Exotic Cocktail: Refreshing and unique.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#summer-salad">
+                    <img src="https://www.jocooks.com/wp-content/uploads/2016/05/summer-salad-1.jpg" alt="Summer Salad">
+                    <figcaption>Summer Salad: Light and refreshing.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#breakfast-delight">
+                    <img src="https://th.bing.com/th/id/OIP.yiveJqqiw2VdnhBlqsCDNgHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="Breakfast Delight">
+                    <figcaption>Breakfast Delight: Start your day deliciously.</figcaption>
+                </a>
+            </figure>
+            <figure class="gallery-item">
+                <a href="recipes.html#baking-delight">
+                    <img src="https://th.bing.com/th/id/OIP.WgRBZ6r6mZ6Kuuo4OZhm7QHaE7?w=2000&h=1333&rs=1&pid=ImgDetMain" alt="Baking Delight">
+                    <figcaption>Baking Delight: Sweet and Savory.</figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+    <div class="button-container">
+        <a href="recipes.html" class="explore-recipes-button">Explore All Recipes</a>
+    </div>
+</body>
+</html>
